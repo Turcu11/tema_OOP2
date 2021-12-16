@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     public class Facultate
     {
-        public string NumeFacultate = "Univesitatea Emanuel din Oradea";
+        public string NumeFacultate { get; set; }
         public Student[] Students;
 
         public Facultate(string Name)
@@ -18,7 +18,7 @@ namespace ConsoleApp1
 
         public string Index (string NumarMatricol)
         {
-            for (int i = 0; i < NumarMatricol.Length; i++)
+            for (int i = 0; i < NumarMatricol.Length+1; i++)
             {
                 if (string.Equals(NumarMatricol, Students[i].NumarMatricol)) 
                 {

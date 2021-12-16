@@ -8,10 +8,10 @@ namespace ConsoleApp1
 {
     public class Student
     {
-        public string LastName;
-        public string FirstName;
-        public DateTime DateOfBirth;
-        public string NumarMatricol;
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string NumarMatricol { get; set; }
 
         public Student(string FirstName, string LastName, DateTime DateOfBirth, string NumarMatricol)
         {
